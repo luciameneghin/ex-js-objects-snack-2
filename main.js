@@ -100,19 +100,29 @@ const hamburger = {
   }
 };
 
+// 3
+
 const newRestaurant = { ...hamburger.maker.restaurant };
 newRestaurant.name = "Hyur's II";
 newRestaurant.address = "Second Street, 12";
+// 4 con restaurant
+
 const secondBurger = { ...hamburger };
 secondBurger.maker.restaurant = newRestaurant;
 secondBurger.maker.name = "Chef Hyur";
+// 5 con burger
 
 console.log(hamburger.maker.name); // ?
 console.log(secondBurger.maker.name); // ?
 console.log(hamburger.maker.restaurant.name); // ?
 console.log(secondBurger.maker.restaurant.name); // ?
+
+
 // Senza lanciare il codice, riesci a prevedere cosa viene stampato in console?
+// Risposta: Chef Hyur, Chef Hyur,  Hyur's II, Hyur's II
+
 // Quanti oggetti sono stati creati in memoria durante l'esecuzione di questo codice?
+// Risposta: 5 oggetti
 
 
 // Code Question 6 (Bonus)
