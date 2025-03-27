@@ -148,6 +148,7 @@ const chef = {
   }
 }
 // Qual è il metodo migliore per clonare l’oggetto chef, e perché?
+// Risposta: devo utilizzare lo spread operator per copiare le funzioni, ma allo stesso tempo ci sono delle funzioni annidate che non vengono copiate. Quindi devo utilizzare gli spread operator anche per le funzioni annidate.
 
 
 // Snack  (Bonus)
